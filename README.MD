@@ -11,6 +11,14 @@ As summarised and explained [here](http://uknj.github.io/2015/07/09/ardupilots-a
 
 3. Modify the PWM pins to something suitable.
 
-4. Build the circuit for the LTC2644 as shown in the [documentation](http://cds.linear.com/docs/en/datasheet/2644f.pdf) - follow the Pin config picture. IN^A and IN^B are the PWM outputs from the Arduino respectively, and V^OUTA and V^OUTB are the pins that will go into the Ardupilot.
+4. Build the circuit for the LTC2644 as shown in the [documentation](http://cds.linear.com/docs/en/datasheet/2644f.pdf) - follow the Pin config picture. IN^A and IN^B are the PWM outputs from the Arduino respectively, and V^OUTA and V^OUTB are the pins that will go into the Ardupilot. NB: I could only get one of the ultrasound sensors to actually communicate with the APM, however both do output steady voltage.
 
-More to follow...
+5. Plug in the V^OUT into the APM as shown [here](http://copter.ardupilot.com/wiki/common-optional-hardware/common-rangefinder-landingpage/sonar/#connecting_the_sonar_sensor_on_apm_2x), where the Voltage and Ground are your standard voltage ground connections on the Arduino and Pin 3 is the V^OUT.
+
+6. Upload the code to the Arduino and plug in the power sources and USB connection to the APM as well.
+
+7. Adjust the parameters for the APM.
+
+9. ENJOY :D
+
+TODO: Add list of parameters used and provide info on modification.
